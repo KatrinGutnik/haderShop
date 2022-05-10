@@ -1,0 +1,82 @@
+body, html{
+    background-color: darkkhaki;
+    font-family:'Radio Canada';
+    font-size: 20px;
+    margin: 0;
+}
+.navbar{
+    width: 100%;
+    height: 90px;
+    border: 1px solid red;
+    background-color: red;
+}
+.wrapper{
+    display: flex;
+    padding: 20px;
+    margin: 10px;
+}
+
+.nav__link {
+    /* display: inline-block;*/
+    vertical-align: top;
+    margin: 0 20px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav__link:hover{
+    border: 0.1em solid black;
+    border-radius: 10px;
+    background-color: black;
+    transition: border .2s linear;
+}
+.nav__link img{
+    width: 25px;
+}
+
+.menu{
+    display: flex;
+    width: 100%;
+    padding: 0;
+    justify-content: flex-end;
+    position: absolute;
+    right: 0;
+}
+.menu li{
+    width: 115px;
+    list-style: none;
+    position: relative;
+}
+
+li .nav__link{
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 10px;
+    width: 30px;
+}
+
+.menu a{
+    text-decoration: none;
+    display: block;
+    padding: 0 10px;  //
+height: 40px;
+    line-height: 40px;
+    transition: all .5s;
+}
+.menu a:hover{
+    background: black;
+}
+.menu ul{ ////
+position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+    padding: 10px;
+}
+.menu__link{
+    color: white;
+}
+.menu li:hover ul{
+    display: block;
+}
